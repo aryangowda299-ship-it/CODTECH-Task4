@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E Larning campus | Courses</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body data-page="courses">
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html">E Larning campus</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="mainNav">
+        <a href="index.html">Home</a>
+        <a class="active" href="courses.html">Courses</a>
+        <a href="progress.html">Progress</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="mode-toggle" id="modeToggle" aria-label="Toggle theme">Theme</button>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="section-head">
+        <h1>Explore Learning Tracks</h1>
+      </div>
+
+      <div class="filters">
+        <input id="searchInput" type="search" placeholder="Search tracks, skills, mentors">
+        <select id="categoryFilter">
+          <option value="all">All Domains</option>
+          <option value="development">Development</option>
+          <option value="design">Design</option>
+          <option value="business">Business</option>
+          <option value="data">Data</option>
+        </select>
+      </div>
+
+      <div class="course-list" id="courseList">
+        <article class="course-card fade-up" data-title="JavaScript in Action" data-instructor="Nikhil Rao" data-category="development">
+          <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80" alt="JavaScript development">
+          <div class="card-body">
+            <h3>JavaScript in Action</h3>
+            <p>Instructor: Nikhil Rao</p>
+            <div class="meta-line"><span>10h 30m</span><span>4.8</span></div>
+            <a class="btn btn-sm" href="course-details.html?course=js">View Details</a>
+          </div>
+        </article>
+
+        <article class="course-card fade-up" data-title="Interface Design Playbook" data-instructor="Mira Dsouza" data-category="design">
+          <img src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=900&q=80" alt="Design tools">
+          <div class="card-body">
+            <h3>Interface Design Playbook</h3>
+            <p>Instructor: Mira Dsouza</p>
+            <div class="meta-line"><span>8h 10m</span><span>4.9</span></div>
+            <a class="btn btn-sm" href="course-details.html?course=ui">View Details</a>
+          </div>
+        </article>
+
+        <article class="course-card fade-up" data-title="Strategic Storytelling" data-instructor="Sanjana Iyer" data-category="business">
+          <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=900&q=80" alt="Business communication">
+          <div class="card-body">
+            <h3>Strategic Storytelling</h3>
+            <p>Instructor: Sanjana Iyer</p>
+            <div class="meta-line"><span>6h 45m</span><span>4.6</span></div>
+            <a class="btn btn-sm" href="course-details.html?course=biz">View Details</a>
+          </div>
+        </article>
+
+        <article class="course-card fade-up" data-title="Data Insights Starter" data-instructor="Aditya Shah" data-category="data">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80" alt="Data analytics dashboard">
+          <div class="card-body">
+            <h3>Data Insights Starter</h3>
+            <p>Instructor: Aditya Shah</p>
+            <div class="meta-line"><span>11h 00m</span><span>4.7</span></div>
+            <a class="btn btn-sm" href="course-details.html?course=data">View Details</a>
+          </div>
+        </article>
+      </div>
+      <p id="noResults" class="no-results hidden">No tracks match your current filters.</p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 E Larning campus. Build daily. Ship confidently.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
